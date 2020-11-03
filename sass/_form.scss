@@ -68,13 +68,13 @@
     letter-spacing: 1px;
     margin-bottom: 10px;
     cursor: pointer;
-    transition: opacity .2s;
+    transition: opacity 0.2s;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     opacity: 1;
 
     &:hover {
-      opacity: .7;
+      opacity: 0.7;
     }
   }
 
@@ -84,22 +84,21 @@
     font-weight: 500;
     text-align: center;
 
-    &--link:link, 
+    &--link:link,
     &--link:visited {
       text-decoration: none;
       font-weight: 700;
       color: var(--red);
-      transition: color .2s;
+      transition: color 0.2s;
     }
 
-    &--link:hover, 
+    &--link:hover,
     &--link:active {
       color: var(--blue);
     }
   }
 
   &__item.validate {
-  
     .form__input:invalid {
       border: 2px solid var(--red);
       margin-bottom: 4rem;

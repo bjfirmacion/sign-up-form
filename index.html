@@ -36,31 +36,31 @@
           </div>
 
           <form action="#" class="form">
-            <div class="form__item validate">
+            <div class="form__item">
               <input class="form__input" type="text" name="first-name" id="first-name" placeholder="First Name" required />
               <img class="form__icon-error" src="images/icon-error.svg" alt="error icon">
-              <label class="form__input-label" for="first-name">First Name cannot be empty</label>
+              <label class="form__input-label form__input-label--empty" for="first-name">First Name cannot be empty</label>
             </div>
 
             <div class="form__item">
               <input class="form__input" type="text" name="last-name" id="last-name" placeholder="Last Name" required />
               <img class="form__icon-error" src="images/icon-error.svg" alt="error icon">
-              <label class="form__input-label" for="last name">Last Name cannot be empty</label>
+              <label class="form__input-label form__input-label--empty" for="last name">Last Name cannot be empty</label>
             </div>
 
             <div class="form__item">
               <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" required />
               <img class="form__icon-error" src="images/icon-error.svg" alt="error icon">
-              <label class="form__input-label" for="email">Looks like this is not an email</label>
+              <label class="form__input-label form__input-label--invalid" for="email">Looks like this is not a valid email address</label>
             </div>
 
-            <div class="form__item">
-              <input class="form__input" type="passoword" name="passoword" id="password" placeholder="Password" required />
+            <div class="form__item form__item--email">
+              <input class="form__input" type="password" name="password" id="password" placeholder="Password" required />
               <img class="form__icon-error" src="images/icon-error.svg" alt="error icon">
-              <label class="form__input-label" for="email">Password cannot be empty</label>
+              <label class="form__input-label  form__input-label--empty" for="email">Password cannot be empty</label>
             </div>
 
-            <input class="form__submit" type="submit" value="Claim your free trial">
+            <input class="form__submit" type="submit" id="submit" value="Claim your free trial">
             <p class="paragraph form__terms">By clicking the button, you are agreeing to our <a href="" class="form__terms--link">Terms and Services</a></p>
           </form>
         </div>
@@ -80,6 +80,8 @@
       Coded by <a href="https://github.com/bjfirmacion/sign-up-form" target="_blank">BJ Firmacion</a>.
     </p>
   </footer>
+
+  <script src="form.js"></script>
 </body>
 
 </html>

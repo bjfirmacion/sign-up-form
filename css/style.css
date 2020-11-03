@@ -138,12 +138,12 @@ html {
     letter-spacing: 1px;
     margin-bottom: 10px;
     cursor: pointer;
-    transition: opacity .2s;
+    transition: opacity 0.2s;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     opacity: 1; }
     .form__submit:hover {
-      opacity: .7; }
+      opacity: 0.7; }
   .form__terms {
     color: var(--grayish-blue);
     font-size: 1.1rem;
@@ -153,7 +153,7 @@ html {
       text-decoration: none;
       font-weight: 700;
       color: var(--red);
-      transition: color .2s; }
+      transition: color 0.2s; }
     .form__terms--link:hover, .form__terms--link:active {
       color: var(--blue); }
   .form__item.validate .form__input:invalid {
