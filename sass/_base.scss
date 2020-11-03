@@ -13,6 +13,7 @@
 
   // shadows
 --box-shadow-1: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+--box-shadow-2: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
 }
 
 // ========= Global Resets =========
@@ -27,6 +28,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // sets 1 rem = 10px based on browser default
+}
+
+input {
+  font-family: "Poppins", sans-serif;
 }
 
 // ========= Typography =========

@@ -1,6 +1,7 @@
 .container {
   max-width: 144rem;
-  padding: 12.1rem 16.5rem;
+  height: 100%;
+  padding: 0 16.5rem;
 }
 
 .section-signup {
@@ -21,6 +22,7 @@
   &__text {
     flex: 0 1 52.5rem;
     color: #fff;
+    margin-right: 4.5rem;
   }
 
   &__header {

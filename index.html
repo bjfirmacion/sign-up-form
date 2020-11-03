@@ -36,12 +36,32 @@
           </div>
 
           <form action="#" class="form">
+            <div class="form__item validate">
+              <input class="form__input" type="text" name="first-name" id="first-name" placeholder="First Name" required />
+              <img class="form__icon-error" src="images/icon-error.svg" alt="error icon">
+              <label class="form__input-label" for="first-name">First Name cannot be empty</label>
+            </div>
+
+            <div class="form__item">
+              <input class="form__input" type="text" name="last-name" id="last-name" placeholder="Last Name" required />
+              <img class="form__icon-error" src="images/icon-error.svg" alt="error icon">
+              <label class="form__input-label" for="last name">Last Name cannot be empty</label>
+            </div>
+
             <div class="form__item">
               <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" required />
+              <img class="form__icon-error" src="images/icon-error.svg" alt="error icon">
               <label class="form__input-label" for="email">Looks like this is not an email</label>
             </div>
-            <input type="submit" value="Claim your free trial">
-            <p class="paragraph form__terms">By clicking the button, you are agreeing to our Terms and Services</p>
+
+            <div class="form__item">
+              <input class="form__input" type="passoword" name="passoword" id="password" placeholder="Password" required />
+              <img class="form__icon-error" src="images/icon-error.svg" alt="error icon">
+              <label class="form__input-label" for="email">Password cannot be empty</label>
+            </div>
+
+            <input class="form__submit" type="submit" value="Claim your free trial">
+            <p class="paragraph form__terms">By clicking the button, you are agreeing to our <a href="" class="form__terms--link">Terms and Services</a></p>
           </form>
         </div>
       </div>

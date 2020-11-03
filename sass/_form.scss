@@ -1,5 +1,5 @@
 .form {
-  height: 54rem;
+  height: auto;
   background-color: #fff;
   padding: 4rem;
   border-radius: 10px;
@@ -8,6 +8,7 @@
   &__item {
     width: 100%;
     position: relative;
+    transition: all 0.2s;
   }
 
   &__input {
@@ -17,19 +18,25 @@
     padding: 1.5rem 3.2rem;
     border: 1px solid #dedede;
     background-color: #fff;
-    opacity: 1;
     outline: none;
     border-radius: 5px;
-    // margin-bottom: 2rem;
+    margin-bottom: 2rem;
 
     font-size: 1.4rem;
     line-height: 1.86;
     font-weight: 600;
-    transition: all .2s;
+    transition: all 0.2s;
 
     &:focus {
       border-color: var(--blue);
     }
+  }
+
+  &__icon-error {
+    position: absolute;
+    top: 20%;
+    right: 6%;
+    opacity: 0;
   }
 
   &__input-label {
@@ -40,6 +47,67 @@
 
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 18%;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  &__submit {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 1.5rem;
+    background-color: var(--green);
+    box-shadow: var(--box-shadow-2);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.73;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: opacity .2s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    opacity: 1;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__terms {
+    color: var(--grayish-blue);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+
+    &--link:link, 
+    &--link:visited {
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--red);
+      transition: color .2s;
+    }
+
+    &--link:hover, 
+    &--link:active {
+      color: var(--blue);
+    }
+  }
+
+  &__item.validate {
+  
+    .form__input:invalid {
+      border: 2px solid var(--red);
+      margin-bottom: 4rem;
+
+      & + .form__icon-error,
+      & + .form__icon-error + .form__input-label {
+        opacity: 1;
+      }
+    }
   }
 }
