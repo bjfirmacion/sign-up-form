@@ -1,0 +1,55 @@
+// ========= Variables =========
+:root {
+  // primary colors
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  // accent colors
+  --blue: hsl(248, 32%, 49%);
+
+  // neutral colors
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+
+  // shadows
+--box-shadow-1: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+}
+
+// ========= Global Resets =========
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // sets 1 rem = 10px based on browser default
+}
+
+// ========= Typography =========
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.heading-secondary {
+  font-size: 5rem;
+  line-height: 1.1;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 162%;
+}
+
+// ========= Attribution =========
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

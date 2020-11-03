@@ -1,0 +1,51 @@
+.container {
+  max-width: 144rem;
+  padding: 12.1rem 16.5rem;
+}
+
+.section-signup {
+  width: 100vw;
+  height: 80rem;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-color: var(--red);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signup {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    flex: 0 1 52.5rem;
+    color: #fff;
+  }
+
+  &__header {
+    margin-bottom: 2.5rem;
+  }
+
+  &__form {
+    flex: 0 1 54rem;
+  }
+
+  &__form-header {
+    color: #fff;
+    background-color: var(--blue);
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-1);
+    margin-bottom: 2.4rem;
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+  --box-shadow-1: 0px 8px 0px rgba(0, 0, 0, 0.14688); }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+html {
+  font-family: "Poppins", sans-serif; }
+
+.heading-secondary {
+  font-size: 5rem;
+  line-height: 1.1; }
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 162%; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
+
+.container {
+  max-width: 144rem;
+  padding: 12.1rem 16.5rem; }
+
+.section-signup {
+  width: 100vw;
+  height: 80rem;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-color: var(--red);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.signup {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center; }
+  .signup__text {
+    flex: 0 1 52.5rem;
+    color: #fff; }
+  .signup__header {
+    margin-bottom: 2.5rem; }
+  .signup__form {
+    flex: 0 1 54rem; }
+  .signup__form-header {
+    color: #fff;
+    background-color: var(--blue);
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-1);
+    margin-bottom: 2.4rem; }
+    .signup__form-header--bold {
+      font-weight: 700; }
+
+.form {
+  height: 54rem;
+  background-color: #fff;
+  padding: 4rem;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow-1); }
+  .form__item {
+    width: 100%;
+    position: relative; }
+  .form__input {
+    z-index: 10;
+    width: 100%;
+    height: 5.6rem;
+    padding: 1.5rem 3.2rem;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    opacity: 1;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    font-weight: 600;
+    transition: all .2s; }
+    .form__input:focus {
+      border-color: var(--blue); }
+  .form__input-label {
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--red);
+    position: absolute;
+    right: 0;
+    bottom: 0; }
