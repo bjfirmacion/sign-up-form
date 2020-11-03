@@ -35,7 +35,8 @@ html {
 
 .attribution {
   font-size: 11px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 1.8rem; }
 
 .attribution a {
   color: #3e52a3; }
@@ -108,7 +109,7 @@ html {
       border-color: var(--blue); }
   .form__icon-error {
     position: absolute;
-    top: 20%;
+    top: 18%;
     right: 6%;
     opacity: 0; }
   .form__input-label {
