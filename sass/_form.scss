@@ -5,6 +5,10 @@
   border-radius: 10px;
   box-shadow: var(--box-shadow-1);
 
+  @media only screen and (max-width: 36em) { // up to 576px;
+    padding: 2.4rem;
+  }
+
   &__item {
     width: 100%;
     position: relative;

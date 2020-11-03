@@ -27,6 +27,9 @@ html {
 .heading-secondary {
   font-size: 5rem;
   line-height: 1.1; }
+  @media only screen and (max-width: 36em) {
+    .heading-secondary {
+      font-size: 2.8rem; } }
 
 .paragraph {
   font-size: 1.6rem;
@@ -44,7 +47,19 @@ html {
 .container {
   max-width: 144rem;
   height: 100%;
+  margin: 0 auto;
   padding: 0 16.5rem; }
+  @media only screen and (max-width: 90em) {
+    .container {
+      padding: 0 8rem; } }
+  @media only screen and (max-width: 75em) {
+    .container {
+      padding: 0 4rem; } }
+  @media only screen and (max-width: 60em) {
+    .container {
+      width: 100%;
+      height: auto;
+      padding: 0; } }
 
 .section-signup {
   width: 100vw;
@@ -53,31 +68,58 @@ html {
   background-color: var(--red);
   background-size: cover;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 60em) {
+    .section-signup {
+      height: auto;
+      padding: 8.8rem 6rem; } }
+  @media only screen and (max-width: 36em) {
+    .section-signup {
+      padding: 8.8rem 2.4rem; } }
 
 .signup {
   display: flex;
   height: 100%;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 60em) {
+    .signup {
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch; } }
   .signup__text {
-    flex: 0 1 52.5rem;
+    flex: 0 1.25 52.5rem;
     color: #fff;
     margin-right: 4.5rem; }
+    @media only screen and (max-width: 60em) {
+      .signup__text {
+        margin-right: 0;
+        margin-bottom: 6.4rem;
+        flex: initial;
+        text-align: center; } }
   .signup__header {
     margin-bottom: 2.5rem; }
   .signup__form {
     flex: 0 1 54rem; }
   .signup__form-header {
-    color: #fff;
     background-color: var(--blue);
     width: 100%;
-    height: 6rem;
+    padding: 1.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     box-shadow: var(--box-shadow-1);
-    margin-bottom: 2.4rem; }
+    margin-bottom: 2.4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.73;
+    color: #fff; }
+    @media only screen and (max-width: 36em) {
+      .signup__form-header {
+        padding: 1.7rem 6.6rem; } }
+    @media only screen and (max-width: 22em) {
+      .signup__form-header {
+        padding: 1.7rem 4.2rem; } }
     .signup__form-header--bold {
       font-weight: 700; }
 
@@ -87,6 +129,9 @@ html {
   padding: 4rem;
   border-radius: 10px;
   box-shadow: var(--box-shadow-1); }
+  @media only screen and (max-width: 36em) {
+    .form {
+      padding: 2.4rem; } }
   .form__item {
     width: 100%;
     position: relative;

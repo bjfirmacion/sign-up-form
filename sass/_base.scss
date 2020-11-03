@@ -42,6 +42,10 @@ html {
 .heading-secondary {
   font-size: 5rem;
   line-height: 1.1;
+
+  @media only screen and (max-width: 36em) { // up to 576px;
+    font-size: 2.8rem;
+  }
 }
 
 .paragraph {

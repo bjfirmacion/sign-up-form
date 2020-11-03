@@ -1,7 +1,22 @@
 .container {
   max-width: 144rem;
   height: 100%;
+  margin: 0 auto;
   padding: 0 16.5rem;
+
+  @media only screen and (max-width: 90em) { // up to 1440px;
+    padding: 0 8rem;
+  }
+
+  @media only screen and (max-width: 75em) { // up to 1200px;
+    padding: 0 4rem;
+  }
+
+  @media only screen and (max-width: 60em) { // up to 960px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
 }
 
 .section-signup {
@@ -11,6 +26,15 @@
   background-color: var(--red);
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media only screen and (max-width: 60em) { // up to 960px;
+    height: auto;
+    padding: 8.8rem 6rem;
+  }
+
+  @media only screen and (max-width: 36em) { // up to 576px;
+    padding: 8.8rem 2.4rem;
+  }
 }
 
 .signup {
@@ -19,14 +43,28 @@
   justify-content: space-between;
   align-items: center;
 
+  @media only screen and (max-width: 60em) { // up to 960px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+
   &__text {
-    flex: 0 1 52.5rem;
+    flex: 0 1.25 52.5rem;
     color: #fff;
     margin-right: 4.5rem;
+
+    @media only screen and (max-width: 60em) { // up to 960px;
+      margin-right: 0;
+      margin-bottom: 6.4rem;
+      flex: initial;
+      text-align: center;
+    }
   }
 
   &__header {
     margin-bottom: 2.5rem;
+    
   }
 
   &__form {
@@ -34,10 +72,9 @@
   }
 
   &__form-header {
-    color: #fff;
     background-color: var(--blue);
     width: 100%;
-    height: 6rem;
+    padding: 1.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,6 +82,19 @@
     border-radius: 10px;
     box-shadow: var(--box-shadow-1);
     margin-bottom: 2.4rem;
+
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.73;
+    color: #fff;
+
+    @media only screen and (max-width: 36em) { // up to 576px;
+      padding: 1.7rem 6.6rem;
+    }
+
+    @media only screen and (max-width: 22em) { // up to 352px;
+      padding: 1.7rem 4.2rem;
+    }
 
     &--bold {
       font-weight: 700;
